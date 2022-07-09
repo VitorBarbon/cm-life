@@ -1,0 +1,412 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+:root {
+  --primary-color: #757575;
+  --secondary-color: #9B9B9B;
+  --white: #FFFFFF;
+  --primary-bg: #00cad1;
+}
+
+/* INICIO REGRAS PARA TODOS OS DISPOSITIVOS */
+
+  body, html {
+    width: 100%;
+    height: 100%;
+    font-family: 'Source Sans Pro', sans-serif;
+  }
+
+  section {
+    width: 100%;
+    padding: 30px 0;
+  }
+
+  img { 
+    width: 100%;
+  }
+
+  iframe {
+    width: 100%;
+  }
+
+  .c-header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-bg);
+  }
+
+  .c-logo .logo-link img {
+    width: 140px;
+  }
+
+  .c-logo {
+    height: 80px;
+  }
+
+  .navbar {
+    width: 100%;
+  }
+
+  .navbar .nav-links {
+    width: 100%;
+    height: 40px;
+    border-top: 1px solid rgba(0, 0, 0 ,.2);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .navbar .nav-links li a {
+    color: var(--white);
+  }
+
+  .c-banner {
+    display: flex;
+    align-items: center;
+    background-image: url('./assets/recepcao.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 150px;    
+  }
+
+  .c-banner h1 {
+    position: absolute;
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 36px;
+    color:  var(--white);
+    padding-left: 10px;
+  }
+
+  .txt-center {
+    text-align: center;
+  }
+  
+  .c-about .content h2 {
+    font-size: 18px;
+    color: var(--primary-color);
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .c-about .content p {
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: var(--secondary-color);
+    padding: 0 3px;
+  }
+
+  .c-info img {
+    display: none;
+  }
+
+  .c-info .c-list h3 {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: var(--secondary-color);
+    font-weight: 500;
+  }
+
+  .c-info .c-list ul {
+    font-size: 14px;
+    margin: 0 auto;
+    text-align: start;
+    width: 300px;
+    padding-left: 10%;
+    list-style: disc;
+    margin-top: 10px;
+  }
+
+  .c-info .c-list ul li {
+    padding: 2px 0;
+    color: var(--secondary-color)
+  }
+  
+  .c-specialties .content h4 {
+    color: var(--primary-color);
+    font-size: 16px;
+    margin-bottom: 16px;
+  }
+
+  .c-specialties .content p {
+    color: var(--secondary-color);
+    padding: 0 8px;
+    font-size: 12px;
+    margin-bottom: 32px;
+  }
+
+  .c-specialties .galery {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin: 0 auto;
+  }
+
+  .c-specialties .galery .card {
+    box-shadow: 3px 3px 10px 3px rgba(117, 117, 117, .4);
+    cursor: pointer;
+  }
+
+  .c-specialties .galery .card figure figcaption{
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--secondary-color);
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 14px;
+  }
+
+  .c-specialties .btn {
+    width: 130px;
+    border-radius: 2px;
+    padding: 10px;
+    background-color: var(--primary-bg);
+    color: var(--white);
+    border: 1px solid var(--primary-bg);
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 25px;
+    box-shadow: 3px 3px 10px 3px rgba(117, 117, 117, .4);
+  }
+
+  .c-specialties .btn:hover {
+    background-color: var(--white);
+    color:  var(--primary-bg);
+  }
+
+  .c-contact .content h4 { 
+    color: var(--primary-color);
+    font-size: 16px;
+    margin-bottom: 16px;
+  }
+
+  .c-contact .content p {
+    font-size: 12px;
+    padding: 8px;
+  }
+
+  .c-contact .content strong {
+    color: var(--secondary-color);
+  }
+
+  .c-contact .localization iframe {
+    margin-top: 15px;
+    width: 90%;
+    height: 250px;
+  }
+
+  footer {
+    background-color: #0c6e71;;
+    text-align: center;
+    padding-bottom: 30px;
+  }
+
+  footer .c-logo .logo-link img{
+    width: 110px;
+    margin-top: 24px;
+  }
+
+  footer .info-footer {
+    color: var(--white);
+    font-size: 14px;
+  }
+
+  footer .info-footer p {
+    padding: 8px;
+  }
+
+/* FIM REGRAS PARA TODOS OS DISPOSITIVOS*/
+
+
+/* INICIO REGRAS PARA DISPOSITIVOS DE IMPRESSÃO */
+@media print {
+}
+/* FIM REGRAS PARA DISPOSITIVOS DE IMPRESSÃO */
+
+
+/* INICIO REGRAS PARA DISPOSITIVOS COM LARGURA MÍNIMA DE 320 PIXELS. POR EXEMPLO: SMARTHPHONES */
+@media screen and (min-width: 425px) {
+
+  .c-header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .c-logo .logo-link img {
+    width: 100px;
+    padding-left: 10px;
+    align-self: center;
+  }
+
+  .c-logo {
+    display: flex;
+    align-items: center;
+    height: 60px;
+  }
+
+  .navbar {
+    width: 250px;
+    padding-right: 10px;
+  }
+
+  .navbar .nav-links {
+    border-top: none;
+    justify-content: space-between;
+  }
+
+  .navbar .nav-links li a:hover {
+    color: #000000;
+  }
+
+  .c-banner {
+    height: 200px;
+    width: 100vw;
+  }
+
+  .c-banner h1 { 
+    font-size: 24px;
+  } 
+
+  .content p {
+    width: 400px;
+    margin: 0 auto;
+  }
+
+  .c-specialties .galery {
+    width: 100vw;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+
+  .c-specialties .galery .card {
+    display: flex;
+    flex-basis: 40%;
+  }
+
+  .c-contact .localization iframe {
+    width: 95%;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  footer .c-logo {
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+}
+/* FIM REGRAS PARA DISPOSITIVOS COM LARGURA MÍNIMA DE 320 PIXELS. POR EXEMPLO: SMARTHPHONES */
+
+
+
+
+/* INICIO REGRAS PARA DISPOSITIVOS COM LARGURA MÍNIMA DE 768 PIXELS. POR EXEMPLO: TABLETS */
+@media screen and (min-width: 768px) {
+
+  .c-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .c-info .c-list ul {
+    margin-top: 25px;
+    font-size: 18px;
+    width: 500px;
+  }
+
+  .c-info .c-list h3 {
+    font-size: 24px;
+    margin-right: 40px;
+
+  }
+
+  .c-info .c-list ul li {
+    padding: 0;
+    color: var(--secondary-color)
+  }
+
+  .c-info img {
+    display: block;
+    width: 250px;
+  }
+
+  .c-contact .content p, footer .info-footer p, .c-specialties .content p,  .c-about .content p {
+    font-size: 18px;
+    width: 700px;
+  }
+
+  .c-contact .content h4, .c-specialties .content h4,  .c-about .content h4 {
+    font-size: 24px;
+  }
+
+  .c-specialties .galery .card {
+    flex-basis: 28%;
+  }
+
+  .c-specialties .btn {
+    width: 180px;
+    border-radius: 4px;
+    padding: 15px;
+    font-size: 20px;
+    margin-top: 35px;
+  }
+
+  .c-contact .localization iframe {
+    height: 350px;
+    margin-bottom: 30px;
+  }
+}
+
+
+
+/* FIM REGRAS PARA DISPOSITIVOS COM LARGURA MÍNIMA DE 768 PIXELS. POR EXEMPLO: TABLETS */
+
+
+
+/* INICIO REGRAS PARA DISPOSITIVOS COM LARGURA MÍNIMA DE 1024 PIXELS. POR EXEMPLO: COMPUTADORES DESKTOP E NOTEBOOKS */
+@media screen and (min-width: 1024px) {
+  
+  .c-specialties .galery {
+    width: 1000px;
+  }
+  
+  .c-contact .localization iframe {
+    width: 1000px;
+  }
+
+  .c-header {
+    justify-content: space-around;
+  }
+
+  .c-banner  {
+    justify-content: center;
+  }
+
+  .c-banner h1 {
+      width: 1000px;
+      font-size: 32px;
+      line-height: 38px;
+  }
+}
+/* FIM REGRAS PARA DISPOSITIVOS COM LARGURA MÍNIMA DE 1024 PIXELS. POR EXEMPLO: COMPUTADORES DESKTOP E NOTEBOOKS */
