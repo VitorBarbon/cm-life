@@ -13,7 +13,6 @@
   --white: #FFFFFF;
   --primary-bg: #00cad1;
 }
-
 /* INICIO REGRAS PARA TODOS OS DISPOSITIVOS */
 
   body, html {
@@ -227,16 +226,11 @@
   footer .info-footer p {
     padding: 8px;
   }
-
 /* FIM REGRAS PARA TODOS OS DISPOSITIVOS*/
-
-
 /* INICIO REGRAS PARA DISPOSITIVOS DE IMPRESSÃO */
 @media print {
 }
 /* FIM REGRAS PARA DISPOSITIVOS DE IMPRESSÃO */
-
-
 /* INICIO REGRAS PARA DISPOSITIVOS COM LARGURA MÍNIMA DE 320 PIXELS. POR EXEMPLO: SMARTHPHONES */
 @media screen and (min-width: 425px) {
 
@@ -317,9 +311,6 @@
 }
 /* FIM REGRAS PARA DISPOSITIVOS COM LARGURA MÍNIMA DE 320 PIXELS. POR EXEMPLO: SMARTHPHONES */
 
-
-
-
 /* INICIO REGRAS PARA DISPOSITIVOS COM LARGURA MÍNIMA DE 768 PIXELS. POR EXEMPLO: TABLETS */
 @media screen and (min-width: 768px) {
 
@@ -338,7 +329,6 @@
   .c-info .c-list h3 {
     font-size: 24px;
     margin-right: 40px;
-
   }
 
   .c-info .c-list ul li {
@@ -377,12 +367,7 @@
     margin-bottom: 30px;
   }
 }
-
-
-
 /* FIM REGRAS PARA DISPOSITIVOS COM LARGURA MÍNIMA DE 768 PIXELS. POR EXEMPLO: TABLETS */
-
-
 
 /* INICIO REGRAS PARA DISPOSITIVOS COM LARGURA MÍNIMA DE 1024 PIXELS. POR EXEMPLO: COMPUTADORES DESKTOP E NOTEBOOKS */
 @media screen and (min-width: 1024px) {
